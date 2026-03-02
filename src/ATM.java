@@ -1,10 +1,11 @@
+
 public class ATM {
     private BankAccount acc;
-
     public ATM(){
+        //Set balance
         acc = new BankAccount(500.0);
     }
-
+    //handleTransaction, print error for respective withdraw
     public void handleTransaction(){
         try{
             acc.withdraw(600);
